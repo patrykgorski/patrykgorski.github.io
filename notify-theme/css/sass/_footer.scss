@@ -1,0 +1,22 @@
+/******************************************************/
+/**************** 4 - FOOTER **************************/
+/******************************************************/
+
+footer{
+	width:100%;
+	padding-top:50px;
+	padding-bottom:50px;
+	background-color:#E3E3E3;
+	nav{
+		ul{
+			text-align:center;
+			li{
+				display:inline-block;
+				padding:0 15px;
+				a{
+					color:$text;
+				}
+			}
+		}
+	}
+}

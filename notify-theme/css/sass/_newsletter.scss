@@ -1,0 +1,38 @@
+/******************************************************/
+/**************** 3 - NEWSLETTER **********************/
+/******************************************************/
+
+.newsletter{
+	background-color:#E3E3E3;
+	.container{
+		padding-top:25px;
+		padding-bottom:10px;
+		.n-box{
+			padding-top:10px;
+			padding-bottom:10px;
+			h4{
+				font-size: 20px;
+				font-weight: bold;
+				color:#222;
+				padding-top:15px;
+				font-family: 'Source Sans Pro', sans-serif;
+			}
+			p{
+				color:$text;
+				font-family: 'Source Sans Pro', sans-serif;
+			}
+			div>.button{
+				width: 100%;
+				padding:0;
+				background-color: #2DCC70;
+    			border-color: #24AD5E;
+    			border-bottom-right-radius:10px;
+    			border-top-right-radius:10px;
+			}
+			div>input{
+    			border-bottom-left-radius:10px;
+    			border-top-left-radius:10px;
+			}
+		}
+	}
+}

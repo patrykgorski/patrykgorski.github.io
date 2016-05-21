@@ -1,0 +1,95 @@
+/******************************************************/
+/**************** 4 - OPINION *************************/
+/******************************************************/
+
+.opinions{
+	.container{
+		padding-top: 40px;
+		padding-bottom:40px;
+		.op-text{
+			width: 80%;
+			margin:auto;
+			font-family: 'Source Sans Pro', sans-serif;
+			p{
+				font-style: italic;
+				text-align: center;
+				color: $text;
+				font-size:14px;
+				display: none;
+			}
+		}
+
+		.people{
+			h4{
+				text-align:center;
+				font-weight: bold;
+				font-size:20px;
+				font-family: 'Source Sans Pro', sans-serif;
+			}
+			ul{
+				text-align:center;
+				position:relative;
+				li{
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					position:relative;
+					cursor: pointer;
+					.load-opinion{
+						z-index: 4;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						background-color:rgba(45,204,112,0.5);
+						display: none;
+						@include transition(0.3s, all);
+					}
+					&:hover .load-opinion{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+/******************************************************/
+/**************** 5 - SOCIAL **************************/
+/******************************************************/
+
+.social{
+	padding-bottom:20px;
+	.container{
+		h3{
+			font-family: 'Source Sans Pro', sans-serif;
+			text-align:center;
+			font-weight: bold;
+			font-size:24px;
+		}
+		p{
+			font-size: 14px;
+			text-align: center;
+			color:$text;
+		}
+		ul{
+			text-align:center;
+			li{
+				display: inline-block;
+				background-color:#E3E3E3;
+				font-size: 20px;
+			    width: 40px;
+			    height: 40px;
+			    border-radius: 50%;
+			    overflow: hidden;
+			    text-align: center;
+			    line-height: 40px;
+				a{
+					color:#fff;
+				}
+				&:hover{
+					background-color:$green;
+				}
+			}
+		}
+	}
+}

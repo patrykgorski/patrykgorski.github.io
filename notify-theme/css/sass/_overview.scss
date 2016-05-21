@@ -1,0 +1,49 @@
+/******************************************************/
+/**************** 2 - OVERVIEW ************************/
+/******************************************************/
+.overview{
+	padding-top:50px;
+	padding-bottom:10px;
+}
+
+.container{
+	width:1024px;
+	font-family: 'Source Sans Pro', sans-serif;
+	// 2.1 - O-box
+	.o-box{
+		margin-bottom:40px;
+		h4{
+			font-size: 20px;
+			font-weight: bold;
+			text-align:center;
+			color:#222;
+			padding-top:15px;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+		p{
+			text-align: center;
+			color:$text;
+		}
+		// 2.2 - Hover - Ico
+		&:hover .ico-box{
+			// color:#fff;
+			background-color:#24AD5E;
+			// background-color: $green;
+		}
+		// 2.3 - ico-box
+		.ico-box{
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			//border:2px solid $green;
+			//color:$green;
+			overflow: hidden;
+			margin: auto;
+			text-align: center;
+			line-height: 120px;
+			font-size:60px;
+			color:#fff;
+			background-color: $green;
+		}
+	}
+}

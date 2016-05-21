@@ -1,0 +1,63 @@
+/*DEVICE SIZE*/
+$screen-sm-min:641px;
+$screen-md-min:1024px;
+$screen-bd-min:1200px;
+
+@mixin transition($time, $all){
+	transition:$all $time cubic-bezier(0.79, 0.05, 0.21, 0.73);
+	-moz-transition:$all $time cubic-bezier(0.79, 0.05, 0.21, 0.73);
+	-ms-transition:$all $time cubic-bezier(0.79, 0.05, 0.21, 0.73);
+	-webkit-transition:$all $time cubic-bezier(0.79, 0.05, 0.21, 0.73);
+}
+
+/* COLORS */
+$green:#2DCC70;
+$text:#848484;
+
+@mixin preloader-mobile($time){
+    animation-name: preload-mobile ;
+    animation-duration: $time;
+    animation-timing-function: cubic-bezier(0.88, 0.67, 0.23, 1.09);
+    animation-iteration-count: infinite;
+    -webkit-animation-name: preload-mobile ;
+    -webkit-animation-duration: $time;
+    -webkit-animation-timing-function: cubic-bezier(0.88, 0.67, 0.23, 1.09);
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: preload-mobile ;
+    -moz-animation-duration: $time;
+    -moz-animation-timing-function: cubic-bezier(0.88, 0.67, 0.23, 1.09);
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-name: preload-mobile ;
+    -ms-animation-duration: $time;
+    -ms-animation-timing-function: cubic-bezier(0.88, 0.67, 0.23, 1.09);
+    -ms-animation-iteration-count: infinite;
+}
+
+@keyframes preload-mobile {
+    0% {opacity: 0;}
+    70% {opacity: 1}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes preload-mobile {
+    0% {opacity: 0;}
+    70% {opacity: 1}
+    100% {opacity: 0;}
+}
+
+@-moz-keyframes preload-mobile {
+    0% {opacity: 0;}
+    70% {opacity: 1}
+    100% {opacity: 0;}
+}
+
+@-ms-keyframes preload-mobile {
+    0% {opacity: 0;}
+    70% {opacity: 1}
+    100% {opacity: 0;}
+}
+
+ul, ol {
+  list-style: none;
+  margin:0;
+}

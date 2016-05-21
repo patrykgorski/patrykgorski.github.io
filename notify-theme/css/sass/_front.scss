@@ -1,0 +1,123 @@
+
+/******************************************************/
+/*************** 1 - FRONT BIG WRAPPER ****************/
+/******************************************************/
+
+.front-big-warpper{
+	width:100%;
+	height:600px;
+	background-image:url('../img/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	overflow:hidden;
+	border-top:10px $green solid;
+	.front-container{
+		color:#fff;
+		width:1024px;
+		position:relative;
+		height: 600px;
+		// 1.1 - Mobile fone box
+		.mobie-fone-box{
+			position:absolute;
+			right:0;
+			bottom:0;
+			@include transition(0.3s, all);
+			img{
+				@include transition(0.3s, all);
+				z-index:1;
+			}
+			.mobile{
+				@include transition(0.3s, all);
+				z-index:2;
+				position:absolute;
+				left:15%;
+				top:13%;
+				width:37%;
+				height: 48%;
+				//background-color:#242424;
+				background-color:#fff;
+				overflow: hidden;
+				color:#000;
+				.mobile-preloader{
+					position:absolute;
+					width:100%;
+					height:100%;
+					background-color:$green;
+					.box{
+						position: absolute;
+						@include transition(0.3s, all);
+						top:50%-5%;
+						left:50%-5%;
+						width: 10%;
+						height:10%;
+						margin: auto;
+						background-color:#fff;
+						@include preloader-mobile(.5s);
+					}
+				}
+			}
+		}
+	}
+}
+
+/******************************************************/
+/*************** 1.2 - SLIDE INFO BOX *****************/
+/******************************************************/
+
+.slide-info-box{
+	position:absolute;
+	top:20%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo{
+	@include transition(0.3s, all);
+	h3{
+		@include transition(0.3s, all);
+		font-family: 'Leckerli One', cursive;
+		color:#fff;
+		font-size:60px;
+		span{
+			color:$green;
+		}
+	}
+}
+
+.slide-text{
+	width: 80%;
+	p{
+		font-size: 18px;
+		font-weight: bold;
+		display: none;
+	}
+}
+
+.ico-button{
+	@include transition(0.3s, all);
+	ul{
+		a{
+			text-decoration: none;
+			color:#fff;
+			li{
+				display: inline-block;
+				font-size: 30px;
+				width: 60px;
+				height: 60px;
+				background-color:rgba(0,0,0,0.5);
+				border-radius:100%;
+				overflow: hidden;
+				text-align: center;
+				line-height: 60px;
+				@include transition(0.3s, all);
+				i{
+					margin:0;
+				}
+				&:hover{
+					background-color:$green;
+				}
+			}
+		}
+	}
+}
